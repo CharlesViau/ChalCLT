@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ca.ulaval.glo2004.gui.MainWindow">
+  <grid id="27dc6" binding="PanneauPrincipal" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="45" y="59" width="1923" height="485"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="1294e" binding="PanelHierarchique" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="West"/>
+        <properties>
+          <background color="-394241"/>
+          <inheritsPopupMenu value="false"/>
+          <preferredSize width="200" height="25"/>
+        </properties>
+        <border type="none" title="Hierarchie" title-justification="2"/>
+        <children>
+          <component id="d5c21" class="ca.ulaval.glo2004.gui.TreePanel" binding="treePanel" custom-create="true">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <background color="-394241"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="f0657" binding="PanelHeader" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="10" bottom="0" right="0"/>
+        <constraints border-constraint="North"/>
+        <properties>
+          <background color="-394241"/>
+          <minimumSize width="288" height="15"/>
+          <preferredSize width="10" height="50"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="5a57f" class="View.HeaderPanel" binding="headerPanel" custom-create="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+        </children>
+      </grid>
+      <grid id="269e9" binding="PanelPropriete" layout-manager="FlowLayout" hgap="0" vgap="0" flow-align="1">
+        <constraints border-constraint="East"/>
+        <properties>
+          <background color="-394241"/>
+          <preferredSize width="400" height="24"/>
+        </properties>
+        <border type="none" title="Propriétés" title-justification="2">
+          <font/>
+          <title-color color="-16777216"/>
+        </border>
+        <children>
+          <component id="6155c" class="View.ObjectPropertyEditorPanel" binding="dynamicPropertyPanel" custom-create="true">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </grid>
+      <grid id="2db56" binding="PanelChalet" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="6c4d4" class="ca.ulaval.glo2004.gui.DrawingPanel" binding="drawingPanel" custom-create="true">
+            <constraints border-constraint="Center"/>
+            <properties/>
+          </component>
+        </children>
+      </grid>
+      <grid id="755e0" binding="PanelVues" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="15" bottom="10" right="15"/>
+        <constraints border-constraint="South"/>
+        <properties>
+          <background color="-263681"/>
+          <focusable value="false"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="56999" class="View.ViewSelectionPanel" binding="viewSelectionPanel" custom-create="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
